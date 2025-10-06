@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+   
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+     <title>ICT Project</title>
+
+</head>
+ <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+         <a class="navbar-brand" href="homepage.html">Book2Go</a>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="homepage.html">Home</a> <!-- Seatwork 2 -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="order.html">Order Form</a> <!-- Skills Test -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a> <!-- Contact Page -->
+        </li>
+      </ul> 
+    </div>
+  </div>
+</nav>
+
+     <div class="container">
+        <div class="text-center custom-bg p-3 rounded mt-4">
+             <h1 id="storename"></h1>
+             <p id="ownername"></p>
+             <p id="yearfounded"></p>
+         </div>
+ 
+    <div class="card mt-4 mx-auto">
+      <div class="card-header custom-bg text-center featured-header">Featured Books</div>
+             <p id="popular"></p>
+             <p id="books"></p>
+    </div>
+    <div class="card mt-4 mx-auto">
+      <div class="card-header custom-bg text-center featured-header">Details</div>
+             <p id="delivery"></p>
+             <p id="hours"></p>
+             <p id="howtocare"></p>
+             <p id="taxrate"></p>
+    </div>
+
+    <script type="py" src="main_home.py"></script>
+    
+</body>
+<style>
+
+#storename {
+    color:	#8B008B; 
+    font-size: 3em;
+    font-family: 'Garamond', serif; 
+}
+#ownername, #yearfounded, #popular, #products, #books,
+#delivery, #hours, #howtocare, #taxrate {
+    color: #DDA0DD; 
+    font-family: 'Lucida', cursive;
+
+}   
+.custom-bg {
+    background-color: #FFF8DC; 
+    padding-top: 2rem; 
+}
+.text-center {
+    margin-top: 2rem; 
+}
+p{
+    text-align: center;
+}
+
+.featured-header {
+    color: #8B008B; 
+    background-color: #FFEFD5; 
+    font-family: 'Lucida', cursive;
+}
+#books, #howtocare {
+    line-height: 2;
+    white-space: pre-line;
+} 
+.card {
+    background-color: #FFF8DC; 
+}     
+
+</style>
+
+</html>
